@@ -1,0 +1,40 @@
+{
+  "name": "@goodnight_ian/asku",
+  "version": "1.0.0",
+  "description": "An axios wrapper for common calls to the SkuVault API.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "prettier --write .",
+    "prepush": "npm test",
+    "pretest": "eslint --ignore-path .gitignore",
+    "test": "jest"
+  },
+  "author": "Ian Goodnight",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iangoodnight/asku.git"
+  },
+  "keywords": [
+    "SkuVault",
+    "API",
+    "wrapper"
+  ],
+  "bugs": {
+    "url": "https://github.com/iangoodnight/asku/issues"
+  },
+  "homepage": "https://github.com/iangoodnight/asku#readme"
+}
