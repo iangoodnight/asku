@@ -1,6 +1,6 @@
 {
   "name": "@goodnight_ian/asku",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An axios wrapper for common calls to the SkuVault API.",
   "main": "index.js",
   "scripts": {
