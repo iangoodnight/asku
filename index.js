@@ -25,7 +25,6 @@ const asku = (function () {
     _normalizeArgs,
   } = require('./lib/helpers.js');
 
-
   function getAvailableQuantities(data = {}) {
     const _endpoint = 'inventory/getAvailableQuantities';
 
@@ -83,7 +82,9 @@ const asku = (function () {
     return axios(config);
   }
 
-  getProduct({ProductSKU: 'greenair26-a'}).then(response => console.log(response.data.Product));
+  getProduct({ ProductSKU: 'greenair26-a' }).then((response) =>
+    console.log(response.data.Product)
+  );
 
   function getProducts(data = {}) {
     const _endpoint = 'products/getProducts';

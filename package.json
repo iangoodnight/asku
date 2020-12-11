@@ -6,8 +6,10 @@
   "scripts": {
     "lint": "eslint .",
     "prettier": "prettier --write .",
-    "pretest": "eslint --ignore-path .gitignore",
-    "test": "jest"
+    "pretest": "eslint --ignore-path .gitignore  && prettier --write .",
+    "test": "jest",
+    "precommit": "npm run lint && npm run prettier && npm test",
+    "prepush": "npm run lint && npm run prettier"
   },
   "author": "Ian Goodnight",
   "license": "ISC",
