@@ -11,19 +11,9 @@ if (!process.env.SV_TENANT_TOKEN || !process.env.SV_USER_TOKEN) {
 const asku = (function () {
   'use strict';
 
-  const {
-    _curry,
-    _identifyArgs,
-    _isEmpty,
-    _propertyTest,
-    _slice,
-  } = require('./lib/utils.js');
+  const { _isEmpty, _propertyTest } = require('./lib/utils.js');
 
-  const {
-    _Config,
-    _mixInPageDefaults,
-    _normalizeArgs,
-  } = require('./lib/helpers.js');
+  const { _Config, _mixInPageDefaults } = require('./lib/helpers.js');
 
   function getAvailableQuantities(data = {}) {
     const _endpoint = 'inventory/getAvailableQuantities';
